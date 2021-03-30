@@ -87,6 +87,9 @@ nine.onclick = () => {
 }
 
 zero.onclick = () => {
+	if (input.value.slice(-1) === '0') {
+		return
+	}
 	input.value += '0';
 }
 
@@ -133,6 +136,9 @@ bracket2.onclick = () => {
 }
 
 dot.onclick = () => {
+	if (input.value.slice(-1) === '.') {
+		return
+	}
 	input.value += '.';
 }
 
