@@ -87,7 +87,7 @@ nine.onclick = () => {
 }
 
 zero.onclick = () => {
-	if (input.value.slice(-1) === '0') {
+	if (input.value.slice(-1) === '0' && input.value.length === 1) {
 		return
 	}
 	input.value += '0';
